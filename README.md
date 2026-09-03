@@ -171,16 +171,15 @@ This page helps identify differences in customer activity, territory performance
 
 ### Executive Overview
 
-![Executive Overview](Screenshots/Executive-Overview.png)
+![Executive Overview](./Executive-Overview.png)
 
 ### Product Performance
 
-![Product Performance](Screenshots/Product-Performance.png)
+![Product Performance](./Product-Performance.png)
 
 ### Customer & Territory
 
-![Customer & Territory](Screenshots/Customer-Territory.png)
-
+![Customer & Territory](./Customer-Territory.png)
 ---
 
 ## Key KPIs
