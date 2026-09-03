@@ -66,6 +66,26 @@ This structure allows users to analyze sales performance across different busine
 - `Data/` — Source data and dataset references
 - `Screenshots/` — Dashboard preview images
 
+## Data Sources
+
+The dashboard was built using the AdventureWorks sample dataset. The data was accessed through the LearnSQL API and used as the source for the Power BI data model.
+
+### Source Tables
+
+| Table | Purpose | Source |
+|---|---|---|
+| Sales_SalesOrderHeader | Order header information, dates, customer, territory, tax, and sales channel | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderHeader?limit=10000&sort=OrderDate&order=ASC) |
+| Sales_SalesOrderDetail | Order line details, quantities, and line totals | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderDetail?limit=10000&sort=SalesOrderID&order=ASC) |
+| Production_Product | Product information used for product analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_Product?limit=10000&sort=ProductID&order=ASC) |
+| Production_ProductSubcategory | Product subcategory information | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductSubcategory?limit=10000&sort=ProductSubcategoryID&order=ASC) |
+| Production_ProductCategory | Product category information | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductCategory?limit=10000&sort=ProductCategoryID&order=ASC) |
+| Sales_Customer | Customer information used for customer analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_Customer?limit=10000&sort=CustomerID&order=ASC) |
+| Sales_SalesTerritory | Territory information used for regional analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesTerritory?limit=10000&sort=TerritoryID&order=ASC) |
+
+### Data Preparation
+
+The source data was imported into Power BI and used to build the data model. Relationships between the relevant tables were used to support filtering and analysis across orders, products, customers, and territories.
+
 ## Dashboard Pages
 
 ### 1. Executive Overview
