@@ -1,138 +1,167 @@
 # Sales Intelligence Dashboard
 
-An interactive Power BI dashboard designed to provide a clear view of sales performance across products, customers, orders, and territories.
+An interactive Power BI dashboard designed to provide a clear and comprehensive view of sales performance across products, customers, orders, sales channels, and territories.
+
+The project uses the AdventureWorks sample dataset and presents the data through an interactive three-page dashboard designed for business analysis and performance monitoring.
+
+---
 
 ## Project Overview
 
-This project analyzes sales data from the AdventureWorks dataset and presents key business metrics through an interactive three-page Power BI dashboard.
+The Sales Intelligence Dashboard provides an interactive view of sales performance across multiple business dimensions.
 
-The dashboard is designed to help users explore sales trends, product performance, customer distribution, order activity, and territory-level performance.
+The dashboard allows users to analyze:
+
+- Overall sales and order performance
+- Sales trends over time
+- Product and category performance
+- Customer distribution
+- Territory-level performance
+- Sales representative activity
+- Online and offline order activity
+- Product quantity and sales contribution
+- Freight and shipping performance
+
+The dashboard is designed to make key business information easier to understand through KPIs, charts, comparisons, and interactive filters.
+
+---
 
 ## Business Objectives
 
-The dashboard was developed to provide a consolidated view of sales performance and support data-driven analysis.
+The main objective of this project is to provide a centralized view of sales performance and support data-driven decision-making.
 
-The main objectives are to:
+The dashboard was developed to:
 
-- Monitor overall sales, orders, quantity, and customer activity.
-- Identify sales trends over time.
+- Monitor total sales, orders, quantity, and customer activity.
+- Analyze sales trends over time.
 - Compare product categories and subcategories based on sales and quantity.
-- Analyze sales performance across different territories.
-- Identify top-performing products and sales representatives.
+- Evaluate sales performance across different territories.
+- Identify top-performing products.
+- Analyze sales activity by sales representative.
 - Compare online and offline order activity.
-- Provide an interactive view of key business metrics through filters and visualizations.
+- Analyze customer distribution across territories.
+- Evaluate freight and shipping performance.
+- Provide an interactive analytical experience through filters and visualizations.
 
-## Dataset & Data Sources
+---
 
-The dashboard uses the AdventureWorks dataset, a sample sales database containing information about orders, products, customers, and sales territories.
+## Dataset
 
-Data was retrieved through the LearnSQL AdventureWorks API and imported into Power BI for analysis and visualization.
+The project uses the **AdventureWorks** sample sales dataset.
 
-### Data Tables
+AdventureWorks is a sample relational database containing sales, product, customer, order, and territory information.
 
-The following tables were used in the dashboard:
+The dataset was retrieved through the LearnSQL AdventureWorks API and imported into Power BI for data preparation, modeling, analysis, and visualization.
 
-| Table | Purpose |
-|---|---|
-| Sales_SalesOrderHeader | Order-level information including dates, customer, territory, tax, freight, and sales channel. |
-| Sales_SalesOrderDetail | Order line details including products, quantities, and sales values. |
-| Production_Product | Product information used for product-level analysis. |
-| Production_ProductSubcategory | Product subcategory information used to analyze product performance. |
-| Production_ProductCategory | Product category information used for category-level analysis. |
-| Sales_Customer | Customer information used for customer analysis. |
-| Sales_SalesTerritory | Territory information used for geographical sales analysis. |
-
-### Data Preparation
-
-The data was imported into Power BI and modeled to support interactive analysis across sales, products, customers, orders, and territories.
-
-## Data Model
-
-The data model connects sales transactions with product, customer, territory, and date dimensions to support interactive analysis across the dashboard.
-
-The model includes:
-
-- Sales order header and detail data for transaction-level analysis.
-- Product, subcategory, and category hierarchies for product analysis.
-- Customer and territory dimensions for customer and geographical analysis.
-- A dedicated date table for time-based analysis.
-
-This structure allows users to analyze sales performance across different business dimensions while maintaining consistent filtering across the dashboard.
-
-## Project Structure
-
-- `Sales Performance Dashboard.pbix` — Power BI dashboard file
-- `README.md` — Project documentation
-- `Data/` — Source data and dataset references
-- `Screenshots/` — Dashboard preview images
+---
 
 ## Data Sources
 
-The dashboard was built using the AdventureWorks sample dataset. The data was accessed through the LearnSQL API and used as the source for the Power BI data model.
+The following AdventureWorks tables were used as sources for the Power BI data model:
 
-### Source Tables
-
-| Table | Purpose | Source |
-|---|---|---|
-| Sales_SalesOrderHeader | Order header information, dates, customer, territory, tax, and sales channel | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderHeader?limit=10000&sort=OrderDate&order=ASC) |
-| Sales_SalesOrderDetail | Order line details, quantities, and line totals | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderDetail?limit=10000&sort=SalesOrderID&order=ASC) |
-| Production_Product | Product information used for product analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_Product?limit=10000&sort=ProductID&order=ASC) |
-| Production_ProductSubcategory | Product subcategory information | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductSubcategory?limit=10000&sort=ProductSubcategoryID&order=ASC) |
-| Production_ProductCategory | Product category information | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductCategory?limit=10000&sort=ProductCategoryID&order=ASC) |
-| Sales_Customer | Customer information used for customer analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_Customer?limit=10000&sort=CustomerID&order=ASC) |
-| Sales_SalesTerritory | Territory information used for regional analysis | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesTerritory?limit=10000&sort=TerritoryID&order=ASC) |
-
-### Data Preparation
-
-The source data was imported into Power BI and used to build the data model. Relationships between the relevant tables were used to support filtering and analysis across orders, products, customers, and territories.
-
-## Dashboard Pages
-
-### 1. Executive Overview
-
-Provides a high-level view of overall sales performance, including key sales, order, customer, and quantity metrics. The page also highlights sales trends, product categories, sales channels, and territory performance.
-
-### 2. Product Performance
-
-Focuses on product-level performance by analyzing sales, order quantities, product categories, subcategories, pricing, and territory contribution.
-
-### 3. Customer & Territory
-
-Provides a deeper view of customer and territory performance, including customer distribution, sales person activity, freight, product category performance, and shipping methods.
-
-## Dashboard Preview
-
-### Executive Overview
-
-![Executive Overview](Executive-Overview.png)
-
-### Product Performance
-
-![Product Performance](Product-Performance.png)
-
-### Customer & Territory
-
-![Customer & Territory](Customer-Territory.png)
-
-## Key KPIs
-
-The dashboard tracks the following key performance indicators:
-
-| KPI | Description |
+| Table | Purpose |
 |---|---|
-| **Total Sales** | Total sales value generated from the selected orders. |
-| **Total Orders** | Number of unique sales orders. |
-| **Total Quantity** | Total quantity of products ordered. |
-| **Total Customers** | Number of unique customers. |
-| **Average Order Value** | Average sales value per order. |
-| **Total Tax** | Total tax amount associated with the selected orders. |
-| **Online Orders** | Number of orders placed through the online sales channel. |
-| **Offline Orders** | Number of orders placed through the offline sales channel. |
+| `Sales_SalesOrderHeader` | Order-level information including order dates, customers, territories, tax, freight, and sales channel. |
+| `Sales_SalesOrderDetail` | Order line information including products, quantities, and line totals. |
+| `Production_Product` | Product information used for product-level analysis. |
+| `Production_ProductSubcategory` | Product subcategory information used to analyze product performance. |
+| `Production_ProductCategory` | Product category information used for category-level analysis. |
+| `Sales_Customer` | Customer information used for customer analysis. |
+| `Sales_SalesTerritory` | Territory information used for regional and geographical analysis. |
 
-## Tools & Technologies
+### Source References
 
-- **Microsoft Power BI** — Dashboard development and data visualization.
-- **Power Query** — Data connection and preparation.
-- **DAX** — Measures and business calculations.
-- **AdventureWorks** — Sample sales dataset.
-- **LearnSQL API** — Data source used to retrieve the dataset.
+The data was retrieved from the LearnSQL AdventureWorks API using the following endpoints:
+
+| Table | Source |
+|---|---|
+| `Sales_SalesOrderHeader` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderHeader?limit=10000&sort=OrderDate&order=ASC) |
+| `Sales_SalesOrderDetail` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesOrderDetail?limit=10000&sort=SalesOrderID&order=ASC) |
+| `Production_Product` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_Product?limit=10000&sort=ProductID&order=ASC) |
+| `Production_ProductSubcategory` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductSubcategory?limit=10000&sort=ProductSubcategoryID&order=ASC) |
+| `Production_ProductCategory` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Production_ProductCategory?limit=10000&sort=ProductCategoryID&order=ASC) |
+| `Sales_Customer` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_Customer?limit=10000&sort=CustomerID&order=ASC) |
+| `Sales_SalesTerritory` | [LearnSQL API](https://learnsql.cpetoday.com/api/mssql/adventureworks/Sales_SalesTerritory?limit=10000&sort=TerritoryID&order=ASC) |
+
+---
+
+## Data Preparation
+
+The source data was imported into Power BI using Power Query.
+
+The data preparation process included:
+
+- Connecting Power BI to the AdventureWorks API.
+- Loading the required sales, product, customer, and territory tables.
+- Reviewing and preparing the source data for analysis.
+- Establishing relationships between the relevant tables.
+- Creating a dedicated date table for time-based analysis.
+- Preparing the data model to support interactive filtering and cross-analysis.
+- Creating DAX measures for the dashboard KPIs and analytical calculations.
+
+---
+
+## Data Model
+
+The Power BI data model connects sales transactions with the relevant product, customer, territory, and date information.
+
+The model includes:
+
+- Sales order header data for order-level analysis.
+- Sales order detail data for product, quantity, and sales analysis.
+- Product, subcategory, and category information for product analysis.
+- Customer information for customer-level analysis.
+- Territory information for geographical analysis.
+- A dedicated date table for time-based analysis.
+
+This structure allows users to analyze sales performance from different business perspectives while maintaining consistent filtering across the dashboard.
+
+---
+
+## DAX Measures
+
+The dashboard uses DAX measures to calculate the main KPIs and analytical metrics.
+
+```DAX
+Total Sales =
+SUM(SalesOrderDetails[LineTotal])
+
+Total Orders =
+DISTINCTCOUNT(SalesOrders[Order ID])
+
+Total Quantity =
+SUM(SalesOrderDetails[OrderQty])
+
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+Total Tax =
+SUM(SalesOrders[Tax Amount])
+
+Total Customers =
+DISTINCTCOUNT(Customer[CustomerID])
+
+Online Orders =
+CALCULATE(
+    [Total Orders],
+    SalesOrders[Online Order] = 1
+)
+
+Offline Orders =
+CALCULATE(
+    [Total Orders],
+    SalesOrders[Online Order] = 0
+)
+
+DateTable =
+ADDCOLUMNS(
+    CALENDAR(
+        MIN(SalesOrders[Order Date]),
+        MAX(SalesOrders[Order Date])
+    ),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Year Month", FORMAT([Date], "YYYY-MM")
+)
