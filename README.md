@@ -45,3 +45,20 @@ The following tables were used in the dashboard:
 ### Data Preparation
 
 The data was imported into Power BI and modeled to support interactive analysis across sales, products, customers, orders, and territories.
+
+## Data Model
+
+The dashboard uses a relational data model that connects sales transactions with product, customer, territory, and date information.
+
+The model consists of two main sales tables supported by several dimension tables:
+
+- **SalesOrders** – Contains order-level information such as order date, customer, territory, tax, freight, and sales channel.
+- **SalesOrderDetails** – Contains individual order line information, including products, quantities, and sales amounts.
+- **Product** – Provides product-level information and connects products to their subcategories.
+- **ProductSubCategory** – Groups products into subcategories and connects them to product categories.
+- **ProductCategory** – Provides the highest level of product classification.
+- **Customer** – Contains customer information used for customer-level analysis.
+- **Territory** – Contains territory information used for geographical analysis.
+- **DateTable** – A dedicated date table used for time-based analysis and filtering.
+
+The model allows sales transactions to be analyzed across different dimensions, including time, products, customers, and territories.
