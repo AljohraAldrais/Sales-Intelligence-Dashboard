@@ -65,3 +65,32 @@ This structure allows users to analyze sales performance across different busine
 - `README.md` — Project documentation
 - `Data/` — Source data and dataset references
 - `Screenshots/` — Dashboard preview images
+
+## Dashboard Pages
+
+### 1. Executive Overview
+
+Provides a high-level view of overall sales performance, including key sales, order, customer, and quantity metrics. The page also highlights sales trends, product categories, sales channels, and territory performance.
+
+### 2. Product Performance
+
+Focuses on product-level performance by analyzing sales, order quantities, product categories, subcategories, pricing, and territory contribution.
+
+### 3. Customer & Territory
+
+Provides a deeper view of customer and territory performance, including customer distribution, sales person activity, freight, product category performance, and shipping methods.
+
+## Key KPIs
+
+The dashboard tracks the following key performance indicators:
+
+| KPI | Description |
+|---|---|
+| **Total Sales** | Total sales value generated from the selected orders. |
+| **Total Orders** | Number of unique sales orders. |
+| **Total Quantity** | Total quantity of products ordered. |
+| **Total Customers** | Number of unique customers. |
+| **Average Order Value** | Average sales value per order. |
+| **Total Tax** | Total tax amount associated with the selected orders. |
+| **Online Orders** | Number of orders placed through the online sales channel. |
+| **Offline Orders** | Number of orders placed through the offline sales channel. |
