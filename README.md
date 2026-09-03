@@ -234,7 +234,6 @@ The visuals update dynamically based on the selected filters, allowing users to 
 Sales-Intelligence-Dashboard/
 │
 ├── README.md
-│
 ├── Sales Performance Dashboard.pbix
 │
 ├── DAX/
@@ -243,10 +242,9 @@ Sales-Intelligence-Dashboard/
 ├── Data/
 │   └── Source data and dataset references
 │
-└── Screenshots/
-    ├── Executive-Overview.png
-    ├── Product-Performance.png
-    └── Customer-Territory.png
+├── Executive-Overview.png
+├── Product-Performance.png
+└── Customer-Territory.png
 ```
 
 ---
