@@ -240,11 +240,12 @@ Sales-Intelligence-Dashboard/
 │   └── DAX-Measures.md
 │
 ├── Data/
-│   └── Source data and dataset references
+│   └── Data-Sources.md
 │
-├── Executive-Overview.png
-├── Product-Performance.png
-└── Customer-Territory.png
+└── Screenshots/
+    ├── Executive-Overview.png
+    ├── Product-Performance.png
+    └── Customer-Territory.png
 ```
 
 ---
