@@ -94,3 +94,11 @@ The dashboard tracks the following key performance indicators:
 | **Total Tax** | Total tax amount associated with the selected orders. |
 | **Online Orders** | Number of orders placed through the online sales channel. |
 | **Offline Orders** | Number of orders placed through the offline sales channel. |
+
+## Tools & Technologies
+
+- **Microsoft Power BI** — Dashboard development and data visualization.
+- **Power Query** — Data connection and preparation.
+- **DAX** — Measures and business calculations.
+- **AdventureWorks** — Sample sales dataset.
+- **LearnSQL API** — Data source used to retrieve the dataset.
