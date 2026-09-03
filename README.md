@@ -80,6 +80,20 @@ Focuses on product-level performance by analyzing sales, order quantities, produ
 
 Provides a deeper view of customer and territory performance, including customer distribution, sales person activity, freight, product category performance, and shipping methods.
 
+## Dashboard Preview
+
+### Executive Overview
+
+![Executive Overview](Executive-Overview.png)
+
+### Product Performance
+
+![Product Performance](Product-Performance.png)
+
+### Customer & Territory
+
+![Customer & Territory](Customer-Territory.png)
+
 ## Key KPIs
 
 The dashboard tracks the following key performance indicators:
