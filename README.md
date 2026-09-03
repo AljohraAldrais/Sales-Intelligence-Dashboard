@@ -58,3 +58,10 @@ The model includes:
 - A dedicated date table for time-based analysis.
 
 This structure allows users to analyze sales performance across different business dimensions while maintaining consistent filtering across the dashboard.
+
+## Project Structure
+
+- `Sales Performance Dashboard.pbix` — Power BI dashboard file
+- `README.md` — Project documentation
+- `Data/` — Source data and dataset references
+- `Screenshots/` — Dashboard preview images
