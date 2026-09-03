@@ -21,3 +21,27 @@ The main objectives are to:
 - Identify top-performing products and sales representatives.
 - Compare online and offline order activity.
 - Provide an interactive view of key business metrics through filters and visualizations.
+
+## Dataset & Data Sources
+
+The dashboard uses the AdventureWorks dataset, a sample sales database containing information about orders, products, customers, and sales territories.
+
+Data was retrieved through the LearnSQL AdventureWorks API and imported into Power BI for analysis and visualization.
+
+### Data Tables
+
+The following tables were used in the dashboard:
+
+| Table | Purpose |
+|---|---|
+| Sales_SalesOrderHeader | Order-level information including dates, customer, territory, tax, freight, and sales channel. |
+| Sales_SalesOrderDetail | Order line details including products, quantities, and sales values. |
+| Production_Product | Product information used for product-level analysis. |
+| Production_ProductSubcategory | Product subcategory information used to analyze product performance. |
+| Production_ProductCategory | Product category information used for category-level analysis. |
+| Sales_Customer | Customer information used for customer analysis. |
+| Sales_SalesTerritory | Territory information used for geographical sales analysis. |
+
+### Data Preparation
+
+The data was imported into Power BI and modeled to support interactive analysis across sales, products, customers, orders, and territories.
